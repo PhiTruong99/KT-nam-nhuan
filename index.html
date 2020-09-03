@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>KT nam nhuan</title>
+    </head>
+    <body>
+        <script>
+            //Những năm chia hết cho 4 mà không chia hết cho 100 là năm nhuận
+            //Những năm chia hết cho 100 mà không chia hết cho 400 thì KHÔNG PHẢI là năm nhuận
+            //Những năm chia hết đồng thời cho 100 và 400 là năm nhuận
+            var x;
+            x = parseInt(prompt("Nhap vao so nam: "));
+            if(x%4==0&&x%100!=0){
+                document.write(x ," la nam nhuan");
+            }else if(x%100==0&&x%400==0){
+                document.write(x ," la nam nhuan");
+            }else{
+                document.write(x ," khong la nam nhuan");
+            }
+        </script>
+    </body>
+</html>
